@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5-oy 3-dars</title>
+  </head>
+  <body>
+    <!-- 1. Tugma bosilganda rangni o'zgartirish -->
+    <section>
+      <h2>Tugma bosilganda rangni o'zgartirish</h2>
+      <div id="texts">
+        <p>Text 1</p>
+        <p>Text 2</p>
+        <p>Text 3</p>
+      </div>
+      <button id="isChanged-color">Text rangini o'zgartirish</button>
+    </section>
+
+    <!-- 2. Inputdagi qiymatni clipboardga nusxalash -->
+    <section>
+      <h2>Matnni Clipboardga Nusxalash</h2>
+      <input type="text" id="myInput" placeholder="Matn kiriting" />
+      <button id="nusxa" onclick="myFunction()">Nusxa olish</button>
+      <div id="xabar"></div>
+    </section>
+
+    <!-- 3. Qidiruv natijasini belgilash -->
+
+    <section>
+      <h1>Qidiruv natijasini belgilash</h1>
+      <p id="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+        voluptatibus deserunt et maxime! Non cupiditate, quia voluptatum
+        laudantium illum eveniet.
+      </p>
+      <input type="text" id="text-search" placeholder="matn kiriting...." />
+      <button id="btn" onclick="search()">search</button>
+
+      <div id="xabar2"></div>
+    </section>
+
+    <!-- 4. Elementni yashirish va ko‘rsatish -->
+
+    <section>
+      <h1>Elementni yashirish va ko‘rsatish</h1>
+      <button id="hide">yashirish</button>
+      <button id="show">ko'rsatish</button>
+
+      <p id="p">paragraph 1</p>
+      <p id="p">paragraph 2</p>
+      <p id="p">paragraph 3</p>
+    </section>
+
+    <!-- 5. Tugma bosilganda fon rangini o'zgartirish -->
+    <section>
+      <h1>Tugma bosilganda fon rangini o'zgartirish</h1>
+      <button data-color="red">Qizil</button>
+      <button data-color="green">Yashil</button>
+      <button data-color="blue">Ko'k</button>
+    </section>
+
+    <!-- 6. Belgilangan matnni kattalashtirish -->
+
+    <section>
+      <h1>Belgilangan matnni kattalashtirish</h1>
+      <p id="paragraph">text1</p>
+      <p id="paragraph">text2</p>
+      <p id="paragraph">text3</p>
+    </section>
+
+    <!--7. Ko‘zgu (mirror) effekti -->
+
+    <section>
+      <h1>Ko‘zgu (mirror) effekti</h1>
+      <input type="text" id="mirrorInput" placeholder="matn kiriting....." />
+      <div id="mirrorOutput"></div>
+    </section>
+
+    <!-- 8. Parolni ko‘rsatish/yashirish -->
+
+    <section>
+      <h1>Parolni ko‘rsatish/yashirish</h1>
+      <input
+        type="text"
+        id="passwordInput"
+        placeholder="parolni kiriting....."
+      />
+      <button id="showPassword">Ko'rsatish</button>
+    </section>
+
+    <!-- 9. Elementni boshqarish -->
+    <section>
+      <div
+        id="square"
+        style="
+          width: 50px;
+          height: 50px;
+          background-color: black;
+          position: relative;
+        "
+      ></div>
+      <div style="margin-top: 20px">
+        <button id="up">Yuqoriga</button>
+        <button id="down">Pastga</button>
+        <button id="left">Chapga</button>
+        <button id="right">O‘ngga</button>
+      </div>
+    </section>
+
+    <!-- 10. Tasodifiy rasm ko'rsatish -->
+
+    <!-- 11. Paragraflarni yashirish va ko‘rsatish -->
+    <section>
+      <h1>Paragraflarni yashirish va ko‘rsatish</h1>
+      <button id="hide-btn">yashirish</button>
+      <button id="show-btn">ko'rsatish</button>
+
+      <p id="paragraf">paragraph 1</p>
+      <p id="paragraf">paragraph 2</p>
+      <p id="paragraf">paragraph 3</p>
+    </section>
+
+    <!-- 12. Matnni almashtirish -->
+
+    <section>
+      <p id="text">Hello World!.</p>
+      <p id="text">How are you?</p>
+      <p id="text">Bye bye!</p>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
