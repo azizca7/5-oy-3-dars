@@ -30,18 +30,12 @@ function myFunction() {
   const text = copyText.value;
 
   if (text.trim() !== "") {
-    navigator.clipboard
-      .writeText(text)
-      .then(() => {
-        xabar.textContent = "Matn nusxalandi!";
-        setTimeout(() => {
-          xabar.textContent = "";
-        }, 3000);
-      })
-      .catch(() => {
-        xabar.textContent = "Matnni nusxalab bo'lmadi!";
-        xabar.style.color = "red";
-      });
+    navigator.clipboard.writeText(text).then(() => {
+      xabar.textContent = "Matn nusxalandi!";
+      setTimeout(() => {
+        xabar.textContent = "";
+      }, 3000);
+    });
   } else {
     xabar.textContent = "Matn maydoni bo'sh!";
     xabar.style.color = "orange";
@@ -194,7 +188,6 @@ right.addEventListener("click", function () {
 });
 
 // ============ 10. Tasodifiy rasm ko'rsatish ============
-
 
 // ============ 11. Paragraflarni yashirish va ko‘rsatish ============
 
